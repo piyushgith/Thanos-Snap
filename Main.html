@@ -11,10 +11,24 @@
     </head>
     <body>
       <div class="content">
-        <!--<img src="image/ironman1.jpg" height="400">-->
-        <img src="image/heros.jpg" height="200">
-		<img src="image/thanos.jpg" height="200">
-        <button id="start-btn"></button>
+        <img src="image/thanos.jpg" height="400">
+        <table style="display: none">
+          <tbody>
+            <tr>
+              <td><img src="image/heros.jpg" height="200"></td>
+              <td><img src="image/ironman1.jpg" height="200"></td>
+              <td><img src="image/thanos.jpg" height="200"></td>
+            </tr>
+            <!--
+            <tr>
+                <td><img src="image/ironman.jpg" height="200"></td>
+                <td></td>
+                <td><img src="image/girl.jpg" height="200"></td>
+              </tr>
+              -->
+          </tbody>
+        </table>
+		    <button id="start-btn"></button>
       </div>   
 
     <script> 
@@ -26,7 +40,6 @@
       html2canvas($(".content")[0]).then(canvas => {
         //capture all div data as image
         ctx = canvas.getContext("2d");
-        //ctx.setAttribute('crossOrigin', '');
         var imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
         var pixelArr = imageData.data;
         createBlankImageData(imageData);
