@@ -17,11 +17,11 @@
   }
   #start-btn {
     font-size: 18px;
-    padding: 60px 100px 80px 80px ;
+    padding: 100px 60px 60px 60px ;
     margin-top: 30px;
     border-radius: 10px;
     background:url("../image/thanos-logo.png") white 15px no-repeat;
-    background-size: 150px;
+    background-size: 80px;
   }
   .dust {
     position: absolute;
